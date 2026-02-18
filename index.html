@@ -3,64 +3,91 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Empoli - Serie B</title>
+    <title>Empoli — Restiamo in Serie B</title>
     <style>
-      body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;margin:0;background:#f5f7fa;color:#222}
-      header{background:#004b87;color:#fff;padding:20px 16px}
-      .container{max-width:800px;margin:24px auto;padding:0 16px}
-      .card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
-      table{width:100%;border-collapse:collapse;margin-top:12px}
-      th,td{padding:8px;border-bottom:1px solid #eee;text-align:left}
-      footer{color:#666;font-size:0.9rem;text-align:center;margin:24px 0}
+      :root{--azzurro:#2b82c9;--navy:#043659;--bg:#f7fbff}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bg);color:#102a43}
+      .hero{min-height:60vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,var(--azzurro),#8fcaf1);color:white;padding:48px 16px;text-align:center}
+      .hero h1{font-size:2.2rem;margin:0 0 12px}
+      .hero p{max-width:760px;margin:0 auto;opacity:0.95}
+      .card{background:white;max-width:900px;margin:-48px auto 24px;padding:24px;border-radius:12px;box-shadow:0 8px 30px rgba(3,15,30,0.08)}
+      .summary{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+      .stat{flex:1 1 120px;background:#f1f6fb;border-radius:8px;padding:12px;text-align:center}
+      .stat strong{display:block;font-size:1.25rem;color:var(--navy)}
+      .lead{font-size:1rem;color:#334e68}
+      footer{padding:18px 8px;text-align:center;color:#486581;font-size:0.95rem}
+      @media(min-width:720px){.hero h1{font-size:3rem}}
     </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>Empoli FC — Stagione in Serie B</h1>
-      </div>
-    </header>
+    <main>
+      <section class="hero">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:18px;">
+          <img src="images/empoli-logo.svg" alt="Logo Empoli (placeholder)" style="width:96px;height:96px;border-radius:12px;box-shadow:0 6px 18px rgba(2,18,38,0.12)">
+          <div>
+            <h1>Empoli FC — La stagione che non è bastata</h1>
+            <p class="lead">Non è stata la promozione che tutti speravamo: troppe sconfitte e troppe occasioni mancate. L'Empoli rimane in Serie B, con la voglia però di rialzarsi e costruire il futuro.</p>
+          </div>
+        </div>
+      </section>
 
-    <main class="container">
-      <section class="card">
-        <h2>Un'annata difficile</h2>
-        <p>
-          L'Empoli ha affrontato una stagione complicata: troppe partite perse e pochi punti raccolti
-          hanno impedito la promozione. Nonostante l'impegno della squadra e dei tifosi, la classifica
-          finale conferma che la piazza resterà in Serie B anche il prossimo anno.
-        </p>
+      <article class="card">
+        <h2 style="margin-top:0">Bilancio della stagione</h2>
+        <p>Una squadra che ha mostrato carattere in alcune partite ma non è riuscita a trovare continuità. Tra infortuni, cambi di modulo e notti in cui la rete non si è sbloccata, il risultato finale è stata la permanenza in Serie B.</p>
 
-        <h3>Riassunto stagionale</h3>
-        <table>
+        <div class="summary" aria-hidden="false">
+          <div class="stat">
+            <small>Partite</small>
+            <strong>38</strong>
+          </div>
+          <div class="stat">
+            <small>Vittorie</small>
+            <strong>10</strong>
+          </div>
+          <div class="stat">
+            <small>Pareggi</small>
+            <strong>11</strong>
+          </div>
+          <div class="stat">
+            <small>Sconfitte</small>
+            <strong>17</strong>
+          </div>
+        </div>
+
+        <h3 style="margin-top:20px">Cosa serve per tornare su?</h3>
+        <ul>
+          <li>Progetto tecnico chiaro e stabile per tutta la stagione</li>
+          <li>Mercato mirato: qualità negli attaccanti e solidità in difesa</li>
+          <li>Più continuità e unione tra squadra, staff e tifosi</li>
+        </ul>
+
+        <p>La strada è lunga, ma la passione della città e della tifoseria può diventare la spinta decisiva per ripartire e puntare alla promozione.</p>
+
+        <h3 style="margin-top:20px">Prima Squadra</h3>
+        <p>Roster esemplificativo (sostituisci con i nomi reali se preferisci).</p>
+        <table style="margin-top:8px">
           <thead>
             <tr>
-              <th>Partite</th>
-              <th>Vinte</th>
-              <th>Pareggiate</th>
-              <th>Perse</th>
-              <th>Punti</th>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Ruolo</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>38</td>
-              <td>10</td>
-              <td>11</td>
-              <td>17</td>
-              <td>41</td>
-            </tr>
+            <tr><td>1</td><td>Alessandro Bianchi</td><td>Portiere</td></tr>
+            <tr><td>2</td><td>Davide Russo</td><td>Difensore</td></tr>
+            <tr><td>6</td><td>Luca Romano</td><td>Difensore</td></tr>
+            <tr><td>8</td><td>Matteo Ferri</td><td>Centrocampista</td></tr>
+            <tr><td>10</td><td>Federico Galli</td><td>Trequartista</td></tr>
+            <tr><td>9</td><td>Simone Costa</td><td>Attaccante</td></tr>
           </tbody>
         </table>
-
-        <p>
-          Il club dovrà riflettere su mercato, preparazione e strategia tecnica per tornare più forte.
-          I tifosi sperano in un rilancio che porti nuovamente l'Empoli tra le massime serie.
-        </p>
-      </section>
+      </article>
     </main>
 
     <footer>
-      <div class="container">Pagina informativa — Empoli FC in Serie B • &copy; 2026</div>
+      <div>Per qualsiasi modifica desideri, dimmi lo stile o i contenuti che preferisci.</div>
     </footer>
   </body>
 </html>
